@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Fall.src;
 
 namespace Fall
 {
@@ -28,6 +29,8 @@ namespace Fall
         {
             // TODO: Add your initialization logic here
 
+            GameHandler.Init(graphics, GraphicsDevice);
+
             base.Initialize();
         }
 
@@ -41,6 +44,7 @@ namespace Fall
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            GameHandler.LoadContent(Content);
         }
 
         /// <summary>
@@ -63,6 +67,7 @@ namespace Fall
                 Exit();
 
             // TODO: Add your update logic here
+            GameHandler.Update();
 
             base.Update(gameTime);
         }
@@ -73,7 +78,7 @@ namespace Fall
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GameHandler.Draw(spriteBatch, GraphicsDevice);
 
             // TODO: Add your drawing code here
 

@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Programming/C#/Fall/Content/Cursor.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.1222409
+"D:/Programming/C#/Fall/Content/StartButton.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.0229382
+"D:/Programming/C#/Fall/Content/TitleScreen.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.0189499
