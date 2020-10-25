@@ -33,6 +33,7 @@ namespace Fall.src.Entities
         Boolean isOnRight;
         float drawX = 0;
         float drawY = 0;
+        Player player;
 
         //Constructor(s)
         public Branch(float x, float y, int type, Boolean isOnRight) : base("branch", x, y)
@@ -73,13 +74,22 @@ namespace Fall.src.Entities
                 drawX = -Camera.Width / 2 + 200;
             }
             drawY = y;
+
+            //Find Player
+            for (int i = 0; i < EntityHandler.entities.Count; i++)
+            {
+                if (EntityHandler.entities[i].classId == "player") player = (Player)EntityHandler.entities[i];
+            }
         }
 
 
         //Update
         public override void Update()
         {
-
+            if (y < player.y - Camera.Height * 2)
+            {
+                exists = false;
+            }
         }
 
         //Draw

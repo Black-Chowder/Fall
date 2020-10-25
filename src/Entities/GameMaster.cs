@@ -59,7 +59,7 @@ namespace Fall.src.Entities
             //GENERATE LEVEL:
             if (player.y > gate)
             {
-                Console.WriteLine("Passed Gate: player.y = " + player.y + " gate = " + gate);   
+                //Console.WriteLine("Passed Gate: player.y = " + player.y + " gate = " + gate);   
                 gate = gate + Camera.Height;
                 EntityHandler.entities.Add(
                     new Leaf(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height))));

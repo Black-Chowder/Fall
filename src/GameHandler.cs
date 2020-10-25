@@ -103,7 +103,7 @@ namespace Fall.src
 
         public static void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
-            graphicsDevice.Clear(Color.CornflowerBlue);
+            graphicsDevice.Clear(new Color(255, 228, 194));
             EntityHandler.Draw(spriteBatch, graphicsDevice);
             if (gamestate == "startScreen") startScreen.Draw(spriteBatch, graphicsDevice);
             else if (gamestate == "help") helpScreen.Draw(spriteBatch, graphicsDevice);

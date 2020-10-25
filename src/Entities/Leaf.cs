@@ -26,7 +26,7 @@ namespace Fall.src.Entities
     public class Leaf : Entity
     {
         //Variables
-
+        Player player;
 
         //Constructor(s)
         public Leaf(float x, float y) : base("leaf", x, y)
@@ -43,13 +43,22 @@ namespace Fall.src.Entities
             {
                 EntityHandler.entities.Add(new Branch(-Camera.Width / 2 + 200, y+75, 3, false));
             }
+
+            //Find Player
+            for (int i = 0; i < EntityHandler.entities.Count; i++)
+            {
+                if (EntityHandler.entities[i].classId == "player") player = (Player)EntityHandler.entities[i];
+            }
         }
 
 
         //Update
         public override void Update()
         {
-
+            if (y < player.y - Camera.Height * 2)
+            {
+                exists = false;
+            }
         }
 
         //Draw

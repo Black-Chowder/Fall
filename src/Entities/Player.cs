@@ -92,7 +92,7 @@ namespace New_Physics.Entities
         {
             width = 50 * Camera.gameScale;
             height = 50 * Camera.gameScale;
-            addTrait(new Gravity(this, 1f * Camera.gameScale));
+            addTrait(new Gravity(this, .1f * Camera.gameScale));
             addTrait(new FallingCollision(this, true));
             //addTrait(new Friction(this, (float)1.5, (float)1.02));
             //addTrait(new Timer(this, "timer", 300));
@@ -103,7 +103,7 @@ namespace New_Physics.Entities
 
             //addTrait(new Rigidbody(this, hitboxes, false));
 
-            maxYVel = 20;// * Camera.gameScale;
+            maxYVel = 10;// * Camera.gameScale;
         }
 
         public override void Update()

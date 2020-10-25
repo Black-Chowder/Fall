@@ -123,7 +123,7 @@ namespace Fall.src.Traits
                 //Collision Reactions
                 if (collidingWith == "leaf")
                 {
-                    parent.dy = -30*Camera.gameScale;
+                    parent.dy = -100*Camera.gameScale*((Gravity)((Player)parent).getTrait("gravity")).weight;
                     ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
                 else if (collidingWith == "bug")
