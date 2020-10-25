@@ -67,7 +67,7 @@ namespace Fall.src.Entities
 
         public void JumpedOn()
         {
-            Console.WriteLine("Bug was jumped on");
+            //Console.WriteLine("Bug was jumped on");
             exists = false;
         }
     }

@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
 using New_Physics.Entities;
 using Fall.src;
+using Fall.src.Traits;
 
 namespace Fall.src.Entities
 {
@@ -28,16 +29,50 @@ namespace Fall.src.Entities
     public class Branch : Entity
     {
         //Variables
-        float width;
         int type;
         Boolean isOnRight;
+        float drawX = 0;
+        float drawY = 0;
 
         //Constructor(s)
-        public Branch(float x, float y, int type, Boolean isOnRight) : base("bug", x, y)
+        public Branch(float x, float y, int type, Boolean isOnRight) : base("branch", x, y)
         {
-            this.width = 200;
+            if (!isOnRight && type == 0)
+            {
+                this.x = -Camera.Width/2;
+                base.addTrait(new FallingCollision(this, false));
+                width = 300;
+            }
+            else if (isOnRight && type == 0)
+            {
+                this.x = Camera.Width / 2-300;
+                width = 300;
+                base.addTrait(new FallingCollision(this, false));
+            }
+            else if (!isOnRight && type == 1)
+            {
+                this.x = -Camera.Width / 2+250;
+                base.addTrait(new FallingCollision(this, false));
+                width = 200;
+            }
+            else if (isOnRight && type == 1)
+            {
+                this.x = Camera.Width / 2 - 450;
+                base.addTrait(new FallingCollision(this, false));
+                width = 200;
+            }
             this.type = type;
             this.isOnRight = isOnRight;
+
+            if (isOnRight)
+            {
+                drawX = Camera.Width / 2 - 200;
+            }
+            else
+            {
+                drawX = -Camera.Width / 2 + 200;
+            }
+            drawY = y;
         }
 
 
@@ -52,13 +87,15 @@ namespace Fall.src.Entities
         public override void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
             //Draw Hitbox
+            Texture2D texture = new Texture2D(graphicsDevice, 1, 1, false, SurfaceFormat.Color);
+            texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //TODO (maybe)
             float scale = 8 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
-                (int)(x - BranchSprites.branchSize.X * scale / 2 - Camera.X),
-                (int)(y - BranchSprites.branchSize.Y * scale / 2 - Camera.Y),
+                (int)(drawX - BranchSprites.branchSize.X * scale / 2 - Camera.X),
+                (int)(drawY - BranchSprites.branchSize.Y * scale / 2 - Camera.Y),
                 (int)(BranchSprites.branchSize.X * scale),
                 (int)(BranchSprites.branchSize.Y * scale));
 
@@ -79,7 +116,15 @@ namespace Fall.src.Entities
                     color: Color.White);
             }
 
+            spriteBatch.Draw(texture, new Rectangle(
+                (int)(x - Camera.X),
+                (int)(y - Camera.Y),
+                (int)(width),
+                (int)(10)),
+                Color.White);
+
             spriteBatch.End();
+            texture.Dispose();
         }
     }
 }

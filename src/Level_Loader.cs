@@ -30,6 +30,8 @@ namespace Frogs.src
             EntityHandler.entities.Add(new Tree(0, 0, false));
             EntityHandler.entities.Add(new Leaf(200, 200));
 
+            EntityHandler.entities.Add(new Branch(0, 500, 1, true));
+
 
             EntityHandler.entities.Add(new GameMaster());
         }

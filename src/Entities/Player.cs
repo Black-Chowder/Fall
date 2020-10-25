@@ -68,6 +68,7 @@ namespace New_Physics.Entities
         float fallTimerMax = 180;
         public float angle = 0;
         public float angleChange = 0;
+        public Boolean isAlive = true;
         // </Misc Variables>
 
         // <Animation Variables>
@@ -221,7 +222,7 @@ namespace New_Physics.Entities
                 (int)(PlayerSprites.acornSize.Y * scale));
 
             int angleToIndex = (int)(angle / 359 * 7);
-            Console.WriteLine(angleToIndex);
+            //.WriteLine(angleToIndex);
 
             spriteBatch.Draw(PlayerSprites.acornSpriteSheet, 
                 destinationRectangle: DR,

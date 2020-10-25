@@ -132,6 +132,11 @@ namespace Fall.src.Traits
                     ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
                     ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
+                else if (collidingWith == "branch")
+                {
+                    parent.dy = 0;
+                    ((Player)parent).isAlive = false;
+                }
 
                 return;
             }
