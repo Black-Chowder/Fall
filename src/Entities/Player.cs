@@ -100,7 +100,6 @@ namespace New_Physics.Entities
             addTrait(new Rigidbody(this, hitboxes, false));
 
             maxYVel = height * Camera.gameScale;
-            dx = .1f;
         }
 
         public override void Update()
@@ -115,6 +114,15 @@ namespace New_Physics.Entities
             {
                 if (dx < 0) dx = -10;
                 else dx = 10;
+            }
+
+            if (keys.IsKeyDown(Keys.Left))
+            {
+                dx -= 5;
+            }
+            else if (keys.IsKeyDown(Keys.Right))
+            {
+                dx += 5;
             }
 
             //Sling Handling
@@ -151,7 +159,7 @@ namespace New_Physics.Entities
             }
 
             //Collision With Sides
-
+            sideCollision();
 
 
             //  UPDATE TRAITS  //
@@ -226,11 +234,11 @@ namespace New_Physics.Entities
                 color: Color.White);
 
             spriteBatch.Draw(texture, new Rectangle(
-    (int)(x - Camera.X),
-    (int)(y - Camera.Y),
-    (int)(10),
-    (int)(10)),
-    Color.White);
+                (int)(x - Camera.X),
+                (int)(y - Camera.Y),
+                (int)(10),
+                (int)(10)),
+                Color.White);
 
             int trueAnimator = (int)(animator / aniMod);
 
@@ -246,5 +254,17 @@ namespace New_Physics.Entities
             animator = 0;
         }
 
+
+        private void sideCollision()
+        {
+            if (x < -Camera.Width/2+120)
+            {
+                x = -Camera.Width/2+120;
+            }
+            if (x > Camera.Width/2 - 120)
+            {
+                x = Camera.Width/2 - 120;
+            }
+        }
     }
 }
