@@ -4,11 +4,25 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>D:/Programming/C#/Fall/Content/acorn.png</File>
+    <File>D:/Programming/C#/Fall/Content/branch.png</File>
+    <File>D:/Programming/C#/Fall/Content/bug.png</File>
+    <File>D:/Programming/C#/Fall/Content/cloud.png</File>
     <File>D:/Programming/C#/Fall/Content/Cursor.png</File>
+    <File>D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png</File>
+    <File>D:/Programming/C#/Fall/Content/leaf.png</File>
     <File>D:/Programming/C#/Fall/Content/StartButton.png</File>
     <File>D:/Programming/C#/Fall/Content/TitleScreen.png</File>
+    <File>D:/Programming/C#/Fall/Content/tree.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

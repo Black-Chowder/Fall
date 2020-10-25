@@ -71,7 +71,7 @@ namespace Fall.src
 
         private static void updateGameScale()
         {
-            gameScale = Width / 1920f;
+            gameScale = Width / 1000f;
          
         }
 

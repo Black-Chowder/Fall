@@ -83,7 +83,7 @@ namespace Fall.src
 
         public void LoadContent(ContentManager Content)
         {
-            background = Content.Load<Texture2D>(@"HowToPlay");
+            background = Content.Load<Texture2D>(@"Fall_Concept_Screen");
             buttonSpriteSheet = Content.Load<Texture2D>(@"SmallButton");
             button = Utils.spriteSheetLoader(30, 15, 3, 1);
         }
@@ -119,7 +119,7 @@ namespace Fall.src
         public void Update()
         {
             mouse = Mouse.GetState();
-
+            Begin = true;
             //Button Handling
             buttonState = 0;
             if (Utils.pointRectCollision(mouse.X, mouse.Y, buttonPos.X, buttonPos.Y, buttonPos.Width, buttonPos.Height))
@@ -164,7 +164,7 @@ namespace Fall.src
 
         public void LoadContent(ContentManager Content)
         {
-            background = Content.Load<Texture2D>("TitleScreen");
+            background = Content.Load<Texture2D>("Fall_Concept_Screen");
             buttonSpriteSheet = Content.Load<Texture2D>("StartButton");
             button = Utils.spriteSheetLoader(70, 31, 3, 1);
         }

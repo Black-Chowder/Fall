@@ -24,3 +24,10 @@ D:\Programming\C#\Fall\obj\x86\Debug\Fall.pdb
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Cursor.xnb
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\StartButton.xnb
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\TitleScreen.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\acorn.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\branch.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\bug.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\cloud.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Fall_Concept_Screen.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\tree.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\leaf.xnb

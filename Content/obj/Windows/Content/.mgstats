@@ -1,4 +1,11 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"D:/Programming/C#/Fall/Content/acorn.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/acorn.xnb","TextureProcessor","Texture2DContent",291,4693,0.1106725
+"D:/Programming/C#/Fall/Content/branch.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/branch.xnb","TextureProcessor","Texture2DContent",417,17365,0.0488688
+"D:/Programming/C#/Fall/Content/bug.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/bug.xnb","TextureProcessor","Texture2DContent",174,709,0.0069811
+"D:/Programming/C#/Fall/Content/cloud.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/cloud.xnb","TextureProcessor","Texture2DContent",175,1141,0.0059839
 "D:/Programming/C#/Fall/Content/Cursor.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.1222409
+"D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Fall_Concept_Screen.xnb","TextureProcessor","Texture2DContent",7283,4800085,0.1736794
+"D:/Programming/C#/Fall/Content/leaf.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/leaf.xnb","TextureProcessor","Texture2DContent",198,1149,0.1102134
 "D:/Programming/C#/Fall/Content/StartButton.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.0229382
 "D:/Programming/C#/Fall/Content/TitleScreen.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.0189499
+"D:/Programming/C#/Fall/Content/tree.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/tree.xnb","TextureProcessor","Texture2DContent",147,3285,0.0060122

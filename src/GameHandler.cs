@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
+using Fall.src.Entities;
 
 namespace Fall.src
 {
@@ -29,7 +30,8 @@ namespace Fall.src
 
         public static void Init(GraphicsDeviceManager graphics, GraphicsDevice graphicsDevice)
         {
-            Camera.SetDimensions(graphics, 1024, 576);
+            //Start Camera Dimensions
+            Camera.SetDimensions(graphics, 1200, 1000);//TODO: Make everything scalable and make screen size smaller
             //Camera.SetDimensions(graphics, graphicsDevice);
             EntityHandler.Init();
 
@@ -82,7 +84,11 @@ namespace Fall.src
         public static void LoadContent(ContentManager Content)
         {
             startScreen.LoadContent(Content);
-            //PlayerSprites.LoadContent(Content);
+            PlayerSprites.LoadContent(Content);
+            LeafSprites.LoadContent(Content);
+            BranchSprites.LoadContent(Content);
+            BugSprites.LoadContent(Content);
+            TreeSprites.LoadContent(Content);
             //GoalSprites.LoadContent(Content);
             cursorHandler.LoadContent(Content);
             //PlatformSprites.LoadContent(Content);

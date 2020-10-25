@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using New_Physics.Traits;
+using Fall.src.Entities;
+using Fall.src;
 
 namespace New_Physics.Entities
 {
@@ -17,8 +19,14 @@ namespace New_Physics.Entities
             entities = new List<Entity>();
 
             
-            entities.Add(new Player(100, 0));
-            entities.Add(new Platform(0, 400, 500, 100));
+            entities.Add(new Player(0, 0));
+            entities.Add(new Platform(-200, 400, 500, 100));
+
+            //entities.Add(new Leaf(100, 0));
+            entities.Add(new Branch(200, 300, 0, false));
+            entities.Add(new Bug(200, 100));
+            entities.Add(new Tree(0, 0));
+            entities.Add(new Leaf(0, 200));
         }
 
         public static void Update()
