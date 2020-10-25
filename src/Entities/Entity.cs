@@ -19,7 +19,7 @@ namespace New_Physics.Entities
             entities = new List<Entity>();
 
             
-            entities.Add(new Player(0, 0));
+            entities.Add(new Player(50, 0));
             entities.Add(new Platform(-200, 400, 500, 100));
 
             //entities.Add(new Leaf(100, 0));

@@ -15,6 +15,7 @@ using System.Linq.Expressions;
 using New_Physics.Entities;
 using Fall.src;
 using Frogs.src;
+using Fall.src.Traits;
 using Microsoft.Xna.Framework.Audio;
 
 namespace New_Physics.Entities
@@ -87,7 +88,8 @@ namespace New_Physics.Entities
         {
             width = 50 * Camera.gameScale;
             height = 50 * Camera.gameScale;
-            addTrait(new Gravity(this, 1f * Camera.gameScale));
+            addTrait(new Gravity(this, .1f * Camera.gameScale));
+            addTrait(new FallingCollision(this, true));
             //addTrait(new Friction(this, (float)1.5, (float)1.02));
             //addTrait(new Timer(this, "timer", 300));
 
@@ -98,6 +100,7 @@ namespace New_Physics.Entities
             addTrait(new Rigidbody(this, hitboxes, false));
 
             maxYVel = height * Camera.gameScale;
+            dx = .1f;
         }
 
         public override void Update()
@@ -150,6 +153,7 @@ namespace New_Physics.Entities
             //Collision With Sides
 
 
+
             //  UPDATE TRAITS  //
             base.traitUpdate();  //  <<<======  UPDATE TRAITS
             //  UPDATE TRAITS  //
@@ -198,12 +202,14 @@ namespace New_Physics.Entities
             Texture2D texture = new Texture2D(graphicsDevice, 1, 1, false, SurfaceFormat.Color);
             texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-
+            /*
             if (showHitbox) for (int i = 0; i < ((Rigidbody)getTrait("rigidbody")).hitboxes.Count; i++)
                 {
                     Hitbox hitbox = ((Rigidbody)getTrait("rigidbody")).hitboxes[i];
                     spriteBatch.Draw(texture, new Rectangle((int)(hitbox.x - Camera.X), (int)(hitbox.y - Camera.Y), (int)(hitbox.width), (int)(hitbox.height)), Color.White);
                 }
+            */
+
 
             //Console.WriteLine(Camera.gameScale);
             float scale = 5* Camera.gameScale;
@@ -219,7 +225,12 @@ namespace New_Physics.Entities
                 sourceRectangle: PlayerSprites.acornSprites[0],
                 color: Color.White);
 
-            
+            spriteBatch.Draw(texture, new Rectangle(
+    (int)(x - Camera.X),
+    (int)(y - Camera.Y),
+    (int)(10),
+    (int)(10)),
+    Color.White);
 
             int trueAnimator = (int)(animator / aniMod);
 

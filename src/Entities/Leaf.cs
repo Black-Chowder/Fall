@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
 using New_Physics.Entities;
-using Fall.src;
+using Fall.src.Traits;
 
 namespace Fall.src.Entities
 {
@@ -26,13 +26,13 @@ namespace Fall.src.Entities
     public class Leaf : Entity
     {
         //Variables
-        float width;
 
 
         //Constructor(s)
         public Leaf(float x, float y) : base("leaf", x, y)
         {
-            this.width = 50;
+            width = 50;
+            addTrait(new FallingCollision(this, false));
         }
 
 
@@ -46,13 +46,15 @@ namespace Fall.src.Entities
         public override void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
             //Draw Hitbox
+            Texture2D texture = new Texture2D(graphicsDevice, 1, 1, false, SurfaceFormat.Color);
+            texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-            //TODO (maybe)
+
             float scale = 4 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
-                (int)(x - LeafSprites.leafSize.X * scale / 2 - Camera.X),
-                (int)(y - LeafSprites.leafSize.Y * scale / 2 - Camera.Y),
+                (int)(x - Camera.X),
+                (int)(y - Camera.Y),
                 (int)(LeafSprites.leafSize.X * scale),
                 (int)(LeafSprites.leafSize.Y * scale));
 
@@ -60,7 +62,16 @@ namespace Fall.src.Entities
                 destinationRectangle: DR,
                 color: Color.White);
 
+            spriteBatch.Draw(texture, new Rectangle(
+                (int)(x - Camera.X),
+                (int)(y - Camera.Y),
+                (int)(width),
+                (int)(10)),
+                Color.White);
+
             spriteBatch.End();
+
+            texture.Dispose();
         }
     }
 }

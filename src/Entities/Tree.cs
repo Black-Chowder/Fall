@@ -26,7 +26,6 @@ namespace Fall.src.Entities
     public class Tree : Entity
     {
         //Variables
-        float width;
 
 
         //Constructor(s)

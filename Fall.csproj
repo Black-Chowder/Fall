@@ -56,6 +56,7 @@
     <Compile Include="src\Level_Loader.cs" />
     <Compile Include="src\StartScreen.cs" />
     <Compile Include="src\GameHandler.cs" />
+    <Compile Include="src\Traits\FallingCollision.cs" />
     <Compile Include="src\Traits\Gravity.cs" />
     <Compile Include="src\Traits\Rigidbody.cs" />
     <Compile Include="src\Traits\Trait.cs" />
