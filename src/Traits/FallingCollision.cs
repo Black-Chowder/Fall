@@ -7,13 +7,17 @@ using Fall.src;
 using New_Physics.Traits;
 using New_Physics.Entities;
 using Microsoft.Xna.Framework;
+using Fall.src.Entities;
 
 namespace Fall.src.Traits
 {
+
     public class FallingCollision : Trait
     {
         Entity parent;
         public Boolean isFalling;
+        public string collidingWith = "nothing";
+        int collidingIndex = -1;
 
         new List<Vector2> nc = new List<Vector2>();
 
@@ -42,6 +46,7 @@ namespace Fall.src.Traits
         {
             if (isFalling)
             {
+                collidingWith = "nothing";
                 Boolean isVertical = false;
                 if (parent.x - (parent.x + parent.dx) == 0)
                 {
@@ -77,10 +82,11 @@ namespace Fall.src.Traits
                         //Handle Intersecting Behavior
                         if (isIntersecting)
                         {
-                            Console.WriteLine("Happening <==");
+                            collidingWith = entity.classId;
+                            collidingIndex = i;
                             parent.x = pOI;
                             parent.y = entity.y;
-                            parent.dy = 0;
+                            //parent.dy = 0;
                         }
                     }
                     return;
@@ -107,11 +113,24 @@ namespace Fall.src.Traits
 
                     if (isIntersecting)
                     {
-                        Console.WriteLine("Fall Collision Detected: Vertical");
+                        collidingWith = entity.classId;
+                        collidingIndex = i;
                         parent.y = entity.y;
-                        parent.dy = 0;
+                        //parent.dy = 0;
                     }
                 }
+
+                //Collision Reactions
+                if (collidingWith == "leaf")
+                {
+                    parent.dy = -parent.dy;
+                }
+                else if (collidingWith == "bug")
+                {
+                    parent.dy = -parent.dy;
+                    ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
+                }
+
                 return;
             }
         }

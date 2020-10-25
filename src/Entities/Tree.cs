@@ -26,38 +26,90 @@ namespace Fall.src.Entities
     public class Tree : Entity
     {
         //Variables
+        Boolean isLeft;
 
 
         //Constructor(s)
-        public Tree(float x, float y) : base("tree", x, y)
+        public Tree(float x, float y, Boolean isLeft = true) : base("tree", x, y)
         {
-            this.width = 50;
+            width = 50;
+            height = Camera.Height;
+            this.isLeft = isLeft;
         }
 
 
         //Update
         public override void Update()
         {
-
+            if (y - Camera.Y < 0)
+            {
+                EntityHandler.entities.Add(new Tree(0, y + Camera.Height, isLeft));
+                exists = false;
+            }
         }
 
         //Draw
+        [Obsolete]
         public override void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
             //Draw Hitbox
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //TODO (maybe)
-            float scale = 10 * Camera.gameScale;
+            float scale = 5 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
-                (int)(0),
-                (int)(y - TreeSprites.treeSize.Y * scale / 2 - Camera.Y),
+                isLeft ? (int)(0) : (int)(Camera.Width-width),
+                (int)(y - TreeSprites.treeSize.Y * scale - Camera.Y),
                 (int)(TreeSprites.treeSize.X * scale),
                 (int)(TreeSprites.treeSize.Y * scale));
 
-            spriteBatch.Draw(TreeSprites.tree,
-                destinationRectangle: DR,
-                color: Color.White);
+            if (isLeft)
+            {
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale + TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale + 2 * TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale - TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    color: Color.White);
+            }
+            else
+            {
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    effects: SpriteEffects.FlipHorizontally,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale + TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    effects: SpriteEffects.FlipHorizontally,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale + 2 * TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    effects: SpriteEffects.FlipHorizontally,
+                    color: Color.White);
+
+                DR.Y = (int)(y - TreeSprites.treeSize.Y * scale - TreeSprites.treeSize.Y * scale - Camera.Y);
+                spriteBatch.Draw(TreeSprites.tree,
+                    destinationRectangle: DR,
+                    effects: SpriteEffects.FlipHorizontally,
+                    color: Color.White);
+            }
+
 
             spriteBatch.End();
         }

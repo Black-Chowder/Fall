@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework;
 using New_Physics.Entities;
 using Fall.src;
+using Fall.src.Traits;
 
 
 namespace Fall.src.Entities
@@ -27,13 +28,13 @@ namespace Fall.src.Entities
     public class Bug : Entity
     {
         //Variables
-        float width;
 
 
         //Constructor(s)
         public Bug(float x, float y) : base("bug", x, y)
         {
             this.width = 50;
+            addTrait(new FallingCollision(this, false));
         }
 
 
@@ -62,6 +63,12 @@ namespace Fall.src.Entities
                 color: Color.White);
 
             spriteBatch.End();
+        }
+
+        public void JumpedOn()
+        {
+            Console.WriteLine("Bug was jumped on");
+            exists = false;
         }
     }
 }

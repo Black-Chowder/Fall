@@ -93,13 +93,13 @@ namespace New_Physics.Entities
             //addTrait(new Friction(this, (float)1.5, (float)1.02));
             //addTrait(new Timer(this, "timer", 300));
 
-            List<Hitbox> hitboxes = new List<Hitbox>();
-            hitboxes.Add(new Hitbox(width / 2, height / 2, width, height));
+            //List<Hitbox> hitboxes = new List<Hitbox>();
+            //hitboxes.Add(new Hitbox(width / 2, height / 2, width, height));
             //hitboxes.Add(new Hitbox(-25, 56, this.width, 5));
 
-            addTrait(new Rigidbody(this, hitboxes, false));
+            //addTrait(new Rigidbody(this, hitboxes, false));
 
-            maxYVel = height * Camera.gameScale;
+            maxYVel = height;// * Camera.gameScale;
         }
 
         public override void Update()
@@ -144,18 +144,12 @@ namespace New_Physics.Entities
             else if (mouse.RightButton != ButtonState.Pressed) swingInit = true;
 
             //Regulates Gravitational Speed
-            if (dy >= maxYVel)
+            //Console.WriteLine("Max Y Vel = " + maxYVel + " | dy = " + dy);
+            if (dy >= maxYVel)//<= MIGHT TAKE AWAY LATER
             {
+                //Console.WriteLine("Happening");
                 dy = maxYVel;
-                fallTimer += 1;
-                if (fallTimer >= fallTimerMax)
-                {
-                    GameHandler.gamestate = "die";
-                }
-            }
-            else
-            {
-                fallTimer = 0;
+                
             }
 
             //Collision With Sides
@@ -167,12 +161,10 @@ namespace New_Physics.Entities
             //  UPDATE TRAITS  //
 
 
-
-
             //Pretty self explanatory
             prepAnimation();
 
-            Camera.GoTo(-Camera.Width/2, this.y - Camera.Height / 2);
+            Camera.SudoGoTo(-Camera.Width/2, this.y - Camera.Height / 2);
         }
 
         private void prepAnimation()
@@ -257,13 +249,13 @@ namespace New_Physics.Entities
 
         private void sideCollision()
         {
-            if (x < -Camera.Width/2+120)
+            if (x < -Camera.Width/2+80)
             {
-                x = -Camera.Width/2+120;
+                x = -Camera.Width/2+ 80;
             }
-            if (x > Camera.Width/2 - 120)
+            if (x > Camera.Width/2 - 80)
             {
-                x = Camera.Width/2 - 120;
+                x = Camera.Width/2 - 80;
             }
         }
     }

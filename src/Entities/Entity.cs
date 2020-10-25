@@ -19,14 +19,15 @@ namespace New_Physics.Entities
             entities = new List<Entity>();
 
             
-            entities.Add(new Player(50, 0));
+            entities.Add(new Player(25, 0));
             entities.Add(new Platform(-200, 400, 500, 100));
 
             //entities.Add(new Leaf(100, 0));
             entities.Add(new Branch(200, 300, 0, false));
-            entities.Add(new Bug(200, 100));
+            entities.Add(new Bug(0, 100));
             entities.Add(new Tree(0, 0));
-            entities.Add(new Leaf(0, 200));
+            entities.Add(new Tree(0, 0, false));
+            entities.Add(new Leaf(200, 200));
         }
 
         public static void Update()
@@ -34,6 +35,7 @@ namespace New_Physics.Entities
             for (int i = 0; i < entities.Count; i++)
             {
                 entities[i].Update();
+                if (!entities[i].exists) entities.RemoveAt(i);
             }
             //Console.WriteLine("time mod = " + entities[0].tm);
         }
@@ -86,9 +88,12 @@ namespace New_Physics.Entities
 
         public float tm = 1f;
 
+        public Boolean exists;
+
         public Entity(string classId, float x, float y)
         {
             traits = new List<Trait>();
+            exists = true;
             this.classId = classId;
             this.x = x;
             this.y = y;

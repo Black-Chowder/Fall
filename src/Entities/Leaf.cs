@@ -31,7 +31,7 @@ namespace Fall.src.Entities
         //Constructor(s)
         public Leaf(float x, float y) : base("leaf", x, y)
         {
-            width = 50;
+            width = 100;
             addTrait(new FallingCollision(this, false));
         }
 
