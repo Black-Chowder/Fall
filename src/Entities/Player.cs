@@ -69,6 +69,7 @@ namespace New_Physics.Entities
         public float angle = 0;
         public float angleChange = 0;
         public Boolean isAlive = true;
+        int deathTimer = 0;
         // </Misc Variables>
 
         // <Animation Variables>
@@ -119,7 +120,7 @@ namespace New_Physics.Entities
                 else dx = 10;
             }
 
-            x = mouse.X + Camera.X;
+            
 
             //Sling Handling
             if (mouse.LeftButton == ButtonState.Pressed)
@@ -155,6 +156,22 @@ namespace New_Physics.Entities
 
             //Collision With Sides
             sideCollision();
+
+            if (!isAlive)
+            {
+                ((Gravity)getTrait("gravity")).weight = 0;
+                dy = 0;
+                deathTimer++;
+                if (deathTimer >= 120)
+                {
+                    GameHandler.gamestate = "startScreen";
+                }
+                angleChange = 0;
+            }
+            else
+            {
+                x = mouse.X + Camera.X;
+            }
 
 
             //  UPDATE TRAITS  //
