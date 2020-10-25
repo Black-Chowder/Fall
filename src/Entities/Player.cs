@@ -154,8 +154,7 @@ namespace New_Physics.Entities
                 
             }
 
-            //Collision With Sides
-            sideCollision();
+
 
             if (!isAlive)
             {
@@ -172,6 +171,8 @@ namespace New_Physics.Entities
             {
                 x = mouse.X + Camera.X;
             }
+            //Collision With Sides
+            sideCollision();
 
 
             //  UPDATE TRAITS  //
