@@ -212,7 +212,7 @@ namespace New_Physics.Entities
 
 
             //Console.WriteLine(Camera.gameScale);
-            float scale = 5* Camera.gameScale;
+            float scale = 8* Camera.gameScale;
 
             Rectangle DR = new Rectangle(
                 (int)(x - PlayerSprites.acornSize.X * scale / 2 - Camera.X),

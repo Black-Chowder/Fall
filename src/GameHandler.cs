@@ -32,7 +32,7 @@ namespace Fall.src
         public static void Init(GraphicsDeviceManager graphics, GraphicsDevice graphicsDevice)
         {
             //Start Camera Dimensions
-            Camera.SetDimensions(graphics, 1200, 1000);//TODO: Make everything scalable and make screen size smaller
+            Camera.SetDimensions(graphics, 120*8, 100*8);//TODO: Make everything scalable and make screen size smaller
             //Camera.SetDimensions(graphics, graphicsDevice);
             EntityHandler.Init();
 

@@ -33,6 +33,16 @@ namespace Fall.src.Entities
         {
             width = 100;
             addTrait(new FallingCollision(this, false));
+            //Create a branch for itself here
+            //TODO
+            if (x > 0)
+            {
+                EntityHandler.entities.Add(new Branch(Camera.Width/2-200, y+75, 3, true));
+            }
+            else
+            {
+                EntityHandler.entities.Add(new Branch(-Camera.Width / 2 + 200, y+75, 3, false));
+            }
         }
 
 
@@ -50,7 +60,7 @@ namespace Fall.src.Entities
             texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
-            float scale = 4 * Camera.gameScale;
+            float scale = 8 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
                 (int)(x - Camera.X),

@@ -43,7 +43,7 @@ namespace Fall.src.Entities
             if (shouldGenerateCounter == 25)
             {
                 EntityHandler.entities.Add(
-                    new Leaf(rand.Next(150, Camera.Width-150), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height))));
+                    new Leaf(rand.Next(-Camera.Width/2, Camera.Width/2), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height))));
                 //Console.WriteLine("Newly Generated");
                 shouldGenerateCounter = 0;
             }

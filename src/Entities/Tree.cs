@@ -55,7 +55,7 @@ namespace Fall.src.Entities
             //Draw Hitbox
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //TODO (maybe)
-            float scale = 5 * Camera.gameScale;
+            float scale = 8 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
                 isLeft ? (int)(0) : (int)(Camera.Width-width),

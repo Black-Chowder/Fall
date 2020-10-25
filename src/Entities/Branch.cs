@@ -35,7 +35,7 @@ namespace Fall.src.Entities
         //Constructor(s)
         public Branch(float x, float y, int type, Boolean isOnRight) : base("bug", x, y)
         {
-            this.width = 50;
+            this.width = 200;
             this.type = type;
             this.isOnRight = isOnRight;
         }
@@ -48,12 +48,13 @@ namespace Fall.src.Entities
         }
 
         //Draw
+        [Obsolete]
         public override void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
             //Draw Hitbox
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //TODO (maybe)
-            float scale = 4 * Camera.gameScale;
+            float scale = 8 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
                 (int)(x - BranchSprites.branchSize.X * scale / 2 - Camera.X),
@@ -61,10 +62,22 @@ namespace Fall.src.Entities
                 (int)(BranchSprites.branchSize.X * scale),
                 (int)(BranchSprites.branchSize.Y * scale));
 
-            spriteBatch.Draw(BranchSprites.branch,
-                destinationRectangle: DR,
-                sourceRectangle: BranchSprites.branchSprites[0],
-                color: Color.White);
+            if (isOnRight)
+            {
+                spriteBatch.Draw(BranchSprites.branch,
+                    destinationRectangle: DR,
+                    sourceRectangle: BranchSprites.branchSprites[type],
+                    color: Color.White);
+
+            }
+            else
+            {
+                spriteBatch.Draw(BranchSprites.branch,
+                    destinationRectangle: DR,
+                    sourceRectangle: BranchSprites.branchSprites[type],
+                    effects: SpriteEffects.FlipHorizontally,
+                    color: Color.White);
+            }
 
             spriteBatch.End();
         }

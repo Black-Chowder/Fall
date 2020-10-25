@@ -50,7 +50,7 @@ namespace Fall.src.Entities
             //Draw Hitbox
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //TODO (maybe)
-            float scale = 4 * Camera.gameScale;
+            float scale = 8 * Camera.gameScale;
 
             Rectangle DR = new Rectangle(
                 (int)(x - BugSprites.bugSize.X * scale / 2 - Camera.X),

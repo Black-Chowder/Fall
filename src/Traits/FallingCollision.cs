@@ -123,12 +123,12 @@ namespace Fall.src.Traits
                 //Collision Reactions
                 if (collidingWith == "leaf")
                 {
-                    parent.dy = -30;
+                    parent.dy = -30*Camera.gameScale;
                     ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
                 else if (collidingWith == "bug")
                 {
-                    parent.dy = -30;
+                    parent.dy = -30*Camera.gameScale;
                     ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
                     ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
