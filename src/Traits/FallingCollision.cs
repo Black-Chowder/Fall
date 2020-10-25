@@ -124,11 +124,13 @@ namespace Fall.src.Traits
                 if (collidingWith == "leaf")
                 {
                     parent.dy = -30;
+                    ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
                 else if (collidingWith == "bug")
                 {
                     parent.dy = -30;
                     ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
+                    ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }
 
                 return;

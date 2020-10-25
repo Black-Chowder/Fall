@@ -39,12 +39,12 @@ namespace Fall.src.Entities
             }
 
             //GENERATE LEVEL:
-            Console.WriteLine(shouldGenerateCounter);
+            //Console.WriteLine(shouldGenerateCounter);
             if (shouldGenerateCounter == 25)
             {
                 EntityHandler.entities.Add(
                     new Leaf(rand.Next(150, Camera.Width-150), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height))));
-                Console.WriteLine("Newly Generated");
+                //Console.WriteLine("Newly Generated");
                 shouldGenerateCounter = 0;
             }
         }

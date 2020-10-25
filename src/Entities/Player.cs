@@ -66,6 +66,8 @@ namespace New_Physics.Entities
         float maxYVel;
         float fallTimer = 0;
         float fallTimerMax = 180;
+        public float angle = 0;
+        public float angleChange = 0;
         // </Misc Variables>
 
         // <Animation Variables>
@@ -135,6 +137,11 @@ namespace New_Physics.Entities
 
             }
             else if (mouse.RightButton != ButtonState.Pressed) swingInit = true;
+
+            //Handle Angle
+            angle += angleChange;
+            if (angle > 360) { angle = 0; }
+            if (angle < 0) { angle = 360; }
 
             //Regulates Gravitational Speed
             //Console.WriteLine("Max Y Vel = " + maxYVel + " | dy = " + dy);
@@ -213,11 +220,13 @@ namespace New_Physics.Entities
                 (int)(PlayerSprites.acornSize.X * scale),
                 (int)(PlayerSprites.acornSize.Y * scale));
 
+            int angleToIndex = (int)(angle / 359 * 7);
+            Console.WriteLine(angleToIndex);
+
             spriteBatch.Draw(PlayerSprites.acornSpriteSheet, 
                 destinationRectangle: DR,
-                sourceRectangle: PlayerSprites.acornSprites[0],
+                sourceRectangle: PlayerSprites.acornSprites[angleToIndex],
                 color: Color.White);
-
             spriteBatch.Draw(texture, new Rectangle(
                 (int)(x - Camera.X),
                 (int)(y - Camera.Y),
