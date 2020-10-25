@@ -88,7 +88,7 @@ namespace New_Physics.Entities
         {
             width = 50 * Camera.gameScale;
             height = 50 * Camera.gameScale;
-            addTrait(new Gravity(this, .1f * Camera.gameScale));
+            addTrait(new Gravity(this, 1f * Camera.gameScale));
             addTrait(new FallingCollision(this, true));
             //addTrait(new Friction(this, (float)1.5, (float)1.02));
             //addTrait(new Timer(this, "timer", 300));
@@ -99,7 +99,7 @@ namespace New_Physics.Entities
 
             //addTrait(new Rigidbody(this, hitboxes, false));
 
-            maxYVel = height;// * Camera.gameScale;
+            maxYVel = 20;// * Camera.gameScale;
         }
 
         public override void Update()
@@ -116,14 +116,7 @@ namespace New_Physics.Entities
                 else dx = 10;
             }
 
-            if (keys.IsKeyDown(Keys.Left))
-            {
-                dx -= 5;
-            }
-            else if (keys.IsKeyDown(Keys.Right))
-            {
-                dx += 5;
-            }
+            x = mouse.X + Camera.X;
 
             //Sling Handling
             if (mouse.LeftButton == ButtonState.Pressed)

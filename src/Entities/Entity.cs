@@ -18,7 +18,7 @@ namespace New_Physics.Entities
         {
             entities = new List<Entity>();
 
-            
+            /*
             entities.Add(new Player(25, 0));
             entities.Add(new Platform(-200, 400, 500, 100));
 
@@ -28,6 +28,7 @@ namespace New_Physics.Entities
             entities.Add(new Tree(0, 0));
             entities.Add(new Tree(0, 0, false));
             entities.Add(new Leaf(200, 200));
+            */
         }
 
         public static void Update()

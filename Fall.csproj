@@ -49,6 +49,7 @@
     <Compile Include="src\Entities\Branch.cs" />
     <Compile Include="src\Entities\Bug.cs" />
     <Compile Include="src\Entities\Entity.cs" />
+    <Compile Include="src\Entities\GameMaster.cs" />
     <Compile Include="src\Entities\Leaf.cs" />
     <Compile Include="src\Entities\Platform.cs" />
     <Compile Include="src\Entities\Player.cs" />

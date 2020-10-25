@@ -11,6 +11,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 using Fall.src.Entities;
+using Frogs.src;
 
 namespace Fall.src
 {
@@ -61,7 +62,7 @@ namespace Fall.src
                     }
                     break;
                 case "initLevel":
-                    //Level_Loader.LoadLevel();
+                    Level_Loader.LoadLevel();
                     gamestate = "level";
                     break;
                 case "level":

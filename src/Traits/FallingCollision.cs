@@ -123,11 +123,11 @@ namespace Fall.src.Traits
                 //Collision Reactions
                 if (collidingWith == "leaf")
                 {
-                    parent.dy = -parent.dy;
+                    parent.dy = -30;
                 }
                 else if (collidingWith == "bug")
                 {
-                    parent.dy = -parent.dy;
+                    parent.dy = -30;
                     ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
                 }
 
