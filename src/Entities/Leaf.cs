@@ -37,11 +37,11 @@ namespace Fall.src.Entities
             //TODO
             if (x > 0)
             {
-                EntityHandler.entities.Add(new Branch(Camera.Width/2-200, y+75, 3, true));
+                EntityHandler.entities.Add(new Branch(Camera.Width/2-200, y+25, 3, true));
             }
             else
             {
-                EntityHandler.entities.Add(new Branch(-Camera.Width / 2 + 200, y+75, 3, false));
+                EntityHandler.entities.Add(new Branch(-Camera.Width / 2 + 200, y+25, 3, false));
             }
 
             //Find Player
@@ -73,7 +73,7 @@ namespace Fall.src.Entities
 
             Rectangle DR = new Rectangle(
                 (int)(x - Camera.X),
-                (int)(y - Camera.Y),
+                (int)(y - LeafSprites.leafSize.Y * scale / 2 - Camera.Y),
                 (int)(LeafSprites.leafSize.X * scale),
                 (int)(LeafSprites.leafSize.Y * scale));
 
@@ -81,12 +81,12 @@ namespace Fall.src.Entities
                 destinationRectangle: DR,
                 color: Color.White);
 
-            spriteBatch.Draw(texture, new Rectangle(
-                (int)(x - Camera.X),
-                (int)(y - Camera.Y),
-                (int)(width),
-                (int)(10)),
-                Color.White);
+            //spriteBatch.Draw(texture, new Rectangle(
+            //    (int)(x - Camera.X),
+            //    (int)(y - Camera.Y),
+            //    (int)(width),
+            //    (int)(10)),
+            //    Color.White);
 
             spriteBatch.End();
 

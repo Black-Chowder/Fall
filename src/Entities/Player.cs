@@ -246,12 +246,12 @@ namespace New_Physics.Entities
                 destinationRectangle: DR,
                 sourceRectangle: PlayerSprites.acornSprites[angleToIndex],
                 color: Color.White);
-            spriteBatch.Draw(texture, new Rectangle(
-                (int)(x - Camera.X),
-                (int)(y - Camera.Y),
-                (int)(10),
-                (int)(10)),
-                Color.White);
+            //spriteBatch.Draw(texture, new Rectangle(
+            //    (int)(x - Camera.X),
+            //    (int)(y - Camera.Y),
+            //    (int)(10),
+            //    (int)(10)),
+            //    Color.White);
 
             int trueAnimator = (int)(animator / aniMod);
 

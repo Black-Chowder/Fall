@@ -128,7 +128,7 @@ namespace Fall.src.Traits
                 }
                 else if (collidingWith == "bug")
                 {
-                    parent.dy = -30*Camera.gameScale;
+                    parent.dy = -100 * Camera.gameScale * ((Gravity)((Player)parent).getTrait("gravity")).weight; ;
                     ((Bug)EntityHandler.entities[collidingIndex]).JumpedOn();
                     ((Player)parent).angleChange = new Random().Next(-20, 20);
                 }

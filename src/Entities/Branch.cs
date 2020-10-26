@@ -126,12 +126,12 @@ namespace Fall.src.Entities
                     color: Color.White);
             }
 
-            spriteBatch.Draw(texture, new Rectangle(
-                (int)(x - Camera.X),
-                (int)(y - Camera.Y),
-                (int)(width),
-                (int)(10)),
-                Color.White);
+            //spriteBatch.Draw(texture, new Rectangle(
+            //    (int)(x - Camera.X),
+            //    (int)(y - Camera.Y),
+            //    (int)(width),
+            //    (int)(10)),
+            //    Color.White);
 
             spriteBatch.End();
             texture.Dispose();

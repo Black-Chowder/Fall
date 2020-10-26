@@ -41,9 +41,9 @@ namespace Fall.src.Entities
             //Section 2
             EntityHandler.entities.Add(
                 new Leaf(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next(Camera.Height, 2*Camera.Height)));
-            EntityHandler.entities.Add(
-                new Branch(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next(Camera.Height, 2*Camera.Height),
-                rand.NextDouble() > .5 ? 0 : 1, rand.NextDouble() > .5 ? false : true));
+            //EntityHandler.entities.Add(
+            //    new Branch(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next(Camera.Height, 2*Camera.Height),
+            //    rand.NextDouble() > .5 ? 0 : 1, rand.NextDouble() > .5 ? false : true));
 
 
         }
@@ -66,6 +66,9 @@ namespace Fall.src.Entities
                 EntityHandler.entities.Add(
                     new Branch(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height)),
                     rand.NextDouble() > .5 ? 0 : 1, rand.NextDouble() > .5 ? false : true));
+                EntityHandler.entities.Add(
+                    new Bug(rand.Next(-Camera.Width / 2, Camera.Width / 2), rand.Next((int)(player.y + Camera.Height), (int)(player.y + 2 * Camera.Height))));
+            
             }
         }
 
@@ -74,10 +77,15 @@ namespace Fall.src.Entities
             Texture2D texture = new Texture2D(graphicsDevice, 1, 1, false, SurfaceFormat.Color);
             texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-            spriteBatch.Draw(texture, new Rectangle(0, (int)gate, Camera.Width, 10), Color.White);
+            //spriteBatch.Draw(texture, new Rectangle(0, (int)gate, Camera.Width, 10), Color.White);
             spriteBatch.End();
             texture.Dispose();
             //TODO: Display Score
+        }
+
+        public void addScore()
+        {
+            Score += 1;
         }
     }
 }
