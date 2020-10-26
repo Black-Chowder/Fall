@@ -51,10 +51,10 @@ namespace Fall.src.Entities
         public override void Update()
         {
             //TRACK SCORE:
-            if (player.y > Score)
-            {
-                Score = (int)player.y;
-            }
+            //if (player.y > Score)
+            //{
+            //    Score = (int)player.y;
+            //}
 
             //GENERATE LEVEL:
             if (player.y > gate)
@@ -78,6 +78,7 @@ namespace Fall.src.Entities
             texture.SetData<Color>(new Color[] { Color.White });
             spriteBatch.Begin(samplerState: SamplerState.PointClamp);
             //spriteBatch.Draw(texture, new Rectangle(0, (int)gate, Camera.Width, 10), Color.White);
+            spriteBatch.DrawString(GameHandler.font, "Score: " + Score, new Vector2(25, 25), Color.Black);
             spriteBatch.End();
             texture.Dispose();
             //TODO: Display Score

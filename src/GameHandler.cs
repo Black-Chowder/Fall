@@ -18,6 +18,7 @@ namespace Fall.src
     public static class GameHandler
     {
         public static string gamestate = "startScreen";
+        public static SpriteFont font;
 
         private static StartScreen startScreen;
         private static HelpScreen helpScreen;
@@ -92,6 +93,7 @@ namespace Fall.src
             TreeSprites.LoadContent(Content);
             //GoalSprites.LoadContent(Content);
             cursorHandler.LoadContent(Content);
+            font = Content.Load<SpriteFont>(@"Score");
             //PlatformSprites.LoadContent(Content);
             //helpScreen.LoadContent(Content);
             //ArrowSprites.LoadContent(Content);

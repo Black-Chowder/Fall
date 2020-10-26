@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png</SourceFile>
-  <SourceTime>2020-10-23T22:26:18.7170875-04:00</SourceTime>
-  <DestFile>D:/Programming/C#/Fall/Content/bin/Windows/Fall_Concept_Screen.xnb</DestFile>
-  <DestTime>2020-10-23T22:58:51.8249309-04:00</DestTime>
+  <SourceFile>C:/Users/iabla/Documents/GitHub/Fall/Content/Fall_Concept_Screen.png</SourceFile>
+  <SourceTime>2020-10-25T20:15:37.7921774-04:00</SourceTime>
+  <DestFile>C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Fall_Concept_Screen.xnb</DestFile>
+  <DestTime>2020-10-25T20:30:52.7979121-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

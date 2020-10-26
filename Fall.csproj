@@ -83,6 +83,7 @@
     <None Include="Content\Cursor.xnb" />
     <None Include="Content\Fall_Concept_Screen.xnb" />
     <None Include="Content\leaf.xnb" />
+    <None Include="Content\Score.xnb" />
     <None Include="Content\StartButton.xnb" />
     <None Include="Content\TitleScreen.xnb" />
     <None Include="Content\tree.xnb" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Programming/C#/Fall/Content/StartButton.png</SourceFile>
-  <SourceTime>2020-09-15T23:05:02.7905356-04:00</SourceTime>
-  <DestFile>D:/Programming/C#/Fall/Content/bin/Windows/Content/StartButton.xnb</DestFile>
-  <DestTime>2020-10-19T23:26:02.0893861-04:00</DestTime>
+  <SourceFile>C:/Users/iabla/Documents/GitHub/Fall/Content/StartButton.png</SourceFile>
+  <SourceTime>2020-10-22T23:06:32.5281714-04:00</SourceTime>
+  <DestFile>C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/StartButton.xnb</DestFile>
+  <DestTime>2020-10-25T20:20:07.9299354-04:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

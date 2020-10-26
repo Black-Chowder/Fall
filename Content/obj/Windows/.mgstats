@@ -1,11 +1,12 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"D:/Programming/C#/Fall/Content/acorn.png","D:/Programming/C#/Fall/Content/bin/Windows/acorn.xnb","TextureProcessor","Texture2DContent",291,4693,0.3842612
-"D:/Programming/C#/Fall/Content/branch.png","D:/Programming/C#/Fall/Content/bin/Windows/branch.xnb","TextureProcessor","Texture2DContent",417,17365,0.043057
-"D:/Programming/C#/Fall/Content/bug.png","D:/Programming/C#/Fall/Content/bin/Windows/bug.xnb","TextureProcessor","Texture2DContent",174,709,0.0099179
-"D:/Programming/C#/Fall/Content/cloud.png","D:/Programming/C#/Fall/Content/bin/Windows/cloud.xnb","TextureProcessor","Texture2DContent",175,1141,0.0090216
-"D:/Programming/C#/Fall/Content/Cursor.png","D:/Programming/C#/Fall/Content/bin/Windows/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.3504578
-"D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png","D:/Programming/C#/Fall/Content/bin/Windows/Fall_Concept_Screen.xnb","TextureProcessor","Texture2DContent",7283,4800085,0.2334072
-"D:/Programming/C#/Fall/Content/leaf.png","D:/Programming/C#/Fall/Content/bin/Windows/leaf.xnb","TextureProcessor","Texture2DContent",198,1149,0.3523736
-"D:/Programming/C#/Fall/Content/StartButton.png","D:/Programming/C#/Fall/Content/bin/Windows/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.0229432
-"D:/Programming/C#/Fall/Content/TitleScreen.png","D:/Programming/C#/Fall/Content/bin/Windows/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.0129335
-"D:/Programming/C#/Fall/Content/tree.png","D:/Programming/C#/Fall/Content/bin/Windows/tree.xnb","TextureProcessor","Texture2DContent",147,3285,0.0089754
+"C:/Users/iabla/Documents/GitHub/Fall/Content/acorn.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/acorn.xnb","TextureProcessor","Texture2DContent",291,4693,0.3949444
+"C:/Users/iabla/Documents/GitHub/Fall/Content/branch.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/branch.xnb","TextureProcessor","Texture2DContent",417,17365,0.0438899
+"C:/Users/iabla/Documents/GitHub/Fall/Content/bug.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/bug.xnb","TextureProcessor","Texture2DContent",174,709,0.022942
+"C:/Users/iabla/Documents/GitHub/Fall/Content/cloud.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/cloud.xnb","TextureProcessor","Texture2DContent",175,1141,0.0269285
+"C:/Users/iabla/Documents/GitHub/Fall/Content/Cursor.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.0171194
+"C:/Users/iabla/Documents/GitHub/Fall/Content/Fall_Concept_Screen.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Fall_Concept_Screen.xnb","TextureProcessor","Texture2DContent",7283,4800085,0.2039066
+"C:/Users/iabla/Documents/GitHub/Fall/Content/leaf.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/leaf.xnb","TextureProcessor","Texture2DContent",198,1149,0.0144515
+"C:/Users/iabla/Documents/GitHub/Fall/Content/Score.spritefont","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Score.xnb","FontDescriptionProcessor","SpriteFontContent",2068,70673,0.6714147
+"C:/Users/iabla/Documents/GitHub/Fall/Content/StartButton.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.0548531
+"C:/Users/iabla/Documents/GitHub/Fall/Content/TitleScreen.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.0225076
+"C:/Users/iabla/Documents/GitHub/Fall/Content/tree.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/tree.xnb","TextureProcessor","Texture2DContent",147,3285,0.0109556

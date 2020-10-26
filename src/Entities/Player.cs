@@ -169,7 +169,7 @@ namespace New_Physics.Entities
             }
             else
             {
-                x = mouse.X + Camera.X;
+                x += (mouse.X + Camera.X - x) / 15;
             }
             //Collision With Sides
             sideCollision();

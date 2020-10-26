@@ -43,10 +43,16 @@ namespace New_Physics.Entities
 
         public static void Draw(SpriteBatch spriteBatch, GraphicsDevice graphicsDevice)
         {
+            int playerIndex = 0;
+            int masterIndex = 0;
             for (int i = 0; i < entities.Count; i++)
             {
-                entities[i].Draw(spriteBatch, graphicsDevice);
+                if (entities[i].classId == "player") playerIndex = i;
+                if (entities[i].classId == "gameMaster") masterIndex = i;
+                else entities[i].Draw(spriteBatch, graphicsDevice);
             }
+            entities[playerIndex].Draw(spriteBatch, graphicsDevice);
+            entities[masterIndex].Draw(spriteBatch, graphicsDevice);
         }
 
         //Set time modifier
