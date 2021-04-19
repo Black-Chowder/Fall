@@ -79,6 +79,7 @@
     <None Include="Content\acorn.xnb" />
     <None Include="Content\branch.xnb" />
     <None Include="Content\bug.xnb" />
+    <None Include="Content\Button.xnb" />
     <None Include="Content\cloud.xnb" />
     <None Include="Content\Cursor.xnb" />
     <None Include="Content\Fall_Concept_Screen.xnb" />

@@ -87,6 +87,10 @@ namespace Fall.src.Entities
         public void addScore()
         {
             Score += 1;
+            if (Score > 1)
+            {
+                player.maxYVel = player.maxYVel * Score / 2;
+            }
         }
     }
 }

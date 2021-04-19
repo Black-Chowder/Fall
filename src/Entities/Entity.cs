@@ -51,8 +51,11 @@ namespace New_Physics.Entities
                 if (entities[i].classId == "gameMaster") masterIndex = i;
                 else entities[i].Draw(spriteBatch, graphicsDevice);
             }
-            entities[playerIndex].Draw(spriteBatch, graphicsDevice);
-            entities[masterIndex].Draw(spriteBatch, graphicsDevice);
+            try { 
+                entities[playerIndex].Draw(spriteBatch, graphicsDevice);
+                entities[masterIndex].Draw(spriteBatch, graphicsDevice);
+            }
+            catch { }
         }
 
         //Set time modifier

@@ -1,12 +1,13 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/iabla/Documents/GitHub/Fall/Content/acorn.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/acorn.xnb","TextureProcessor","Texture2DContent",291,4693,2.172188
-"C:/Users/iabla/Documents/GitHub/Fall/Content/branch.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/branch.xnb","TextureProcessor","Texture2DContent",417,17365,0.0209823
-"C:/Users/iabla/Documents/GitHub/Fall/Content/bug.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/bug.xnb","TextureProcessor","Texture2DContent",174,709,0.0117949
-"C:/Users/iabla/Documents/GitHub/Fall/Content/cloud.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/cloud.xnb","TextureProcessor","Texture2DContent",175,1141,0.011898
-"C:/Users/iabla/Documents/GitHub/Fall/Content/Cursor.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.0518608
-"C:/Users/iabla/Documents/GitHub/Fall/Content/Fall_Concept_Screen.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/Fall_Concept_Screen.xnb","TextureProcessor","Texture2DContent",7283,4800085,0.2608643
-"C:/Users/iabla/Documents/GitHub/Fall/Content/leaf.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/leaf.xnb","TextureProcessor","Texture2DContent",198,1149,0.0179505
-"C:/Users/iabla/Documents/GitHub/Fall/Content/Score.spritefont","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/Score.xnb","FontDescriptionProcessor","SpriteFontContent",2068,70673,0.40354
-"C:/Users/iabla/Documents/GitHub/Fall/Content/StartButton.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.1934682
-"C:/Users/iabla/Documents/GitHub/Fall/Content/TitleScreen.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.0381644
-"C:/Users/iabla/Documents/GitHub/Fall/Content/tree.png","C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/Content/tree.xnb","TextureProcessor","Texture2DContent",147,3285,0.0089753
+"D:/Programming/C#/Fall/Content/acorn.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/acorn.xnb","TextureProcessor","Texture2DContent",291,4693,0.4727011
+"D:/Programming/C#/Fall/Content/branch.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/branch.xnb","TextureProcessor","Texture2DContent",417,17365,0.0239043
+"D:/Programming/C#/Fall/Content/bug.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/bug.xnb","TextureProcessor","Texture2DContent",174,709,0.0149874
+"D:/Programming/C#/Fall/Content/Button.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Button.xnb","TextureProcessor","Texture2DContent",424,26125,0.1007583
+"D:/Programming/C#/Fall/Content/cloud.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/cloud.xnb","TextureProcessor","Texture2DContent",175,1141,0.0139615
+"D:/Programming/C#/Fall/Content/Cursor.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Cursor.xnb","TextureProcessor","Texture2DContent",260,341,0.0109777
+"D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/Fall_Concept_Screen.xnb","TextureProcessor","Texture2DContent",7283,4800085,0.1236947
+"D:/Programming/C#/Fall/Content/leaf.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/leaf.xnb","TextureProcessor","Texture2DContent",198,1149,0.0109959
+"D:/Programming/C#/Fall/Content/Score.spritefont","D:/Programming/C#/Fall/Content/bin/Windows/Content/Score.xnb","FontDescriptionProcessor","SpriteFontContent",2068,70673,0.2514021
+"D:/Programming/C#/Fall/Content/StartButton.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/StartButton.xnb","TextureProcessor","Texture2DContent",499,26125,0.0269226
+"D:/Programming/C#/Fall/Content/TitleScreen.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/TitleScreen.xnb","TextureProcessor","Texture2DContent",1263,83029,0.036015
+"D:/Programming/C#/Fall/Content/tree.png","D:/Programming/C#/Fall/Content/bin/Windows/Content/tree.xnb","TextureProcessor","Texture2DContent",147,3285,0.0119691

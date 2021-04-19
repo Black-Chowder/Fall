@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/iabla/Documents/GitHub/Fall/Content/TitleScreen.png</SourceFile>
-  <SourceTime>2020-10-22T23:06:32.5301656-04:00</SourceTime>
-  <DestFile>C:/Users/iabla/Documents/GitHub/Fall/Content/bin/Windows/TitleScreen.xnb</DestFile>
-  <DestTime>2020-10-25T20:30:53.5971218-04:00</DestTime>
+  <SourceFile>D:/Programming/C#/Fall/Content/TitleScreen.png</SourceFile>
+  <SourceTime>2020-09-15T23:25:20.7469967-04:00</SourceTime>
+  <DestFile>D:/Programming/C#/Fall/Content/bin/Windows/TitleScreen.xnb</DestFile>
+  <DestTime>2020-11-13T22:04:27.1470445-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T11:35:54-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -63,7 +63,8 @@ namespace New_Physics.Entities
 
         Boolean isFacingRight = true;
 
-        float maxYVel;
+        public const float maxYVelDef = 10;
+        public float maxYVel;
         float fallTimer = 0;
         float fallTimerMax = 180;
         public float angle = 0;
@@ -103,7 +104,7 @@ namespace New_Physics.Entities
 
             //addTrait(new Rigidbody(this, hitboxes, false));
 
-            maxYVel = 10;// * Camera.gameScale;
+            maxYVel = maxYVelDef;// * Camera.gameScale;
         }
 
         public override void Update()

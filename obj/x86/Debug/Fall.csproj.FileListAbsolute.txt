@@ -65,3 +65,5 @@ C:\Users\iabla\Documents\GitHub\Fall\obj\x86\Debug\Fall.csproj.CopyComplete
 C:\Users\iabla\Documents\GitHub\Fall\obj\x86\Debug\Fall.exe
 C:\Users\iabla\Documents\GitHub\Fall\obj\x86\Debug\Fall.pdb
 C:\Users\iabla\Documents\GitHub\Fall\bin\Windows\x86\Debug\Content\Score.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Score.xnb
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Button.xnb

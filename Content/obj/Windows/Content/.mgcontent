@@ -4,19 +4,21 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/acorn.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/branch.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/bug.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/cloud.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/Cursor.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/Fall_Concept_Screen.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/leaf.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/Score.spritefont</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/StartButton.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/TitleScreen.png</File>
-    <File>C:/Users/iabla/Documents/GitHub/Fall/Content/tree.png</File>
+    <File>D:/Programming/C#/Fall/Content/acorn.png</File>
+    <File>D:/Programming/C#/Fall/Content/branch.png</File>
+    <File>D:/Programming/C#/Fall/Content/bug.png</File>
+    <File>D:/Programming/C#/Fall/Content/Button.png</File>
+    <File>D:/Programming/C#/Fall/Content/cloud.png</File>
+    <File>D:/Programming/C#/Fall/Content/Cursor.png</File>
+    <File>D:/Programming/C#/Fall/Content/Fall_Concept_Screen.png</File>
+    <File>D:/Programming/C#/Fall/Content/leaf.png</File>
+    <File>D:/Programming/C#/Fall/Content/Score.spritefont</File>
+    <File>D:/Programming/C#/Fall/Content/StartButton.png</File>
+    <File>D:/Programming/C#/Fall/Content/TitleScreen.png</File>
+    <File>D:/Programming/C#/Fall/Content/tree.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -110,16 +110,16 @@ namespace Fall.src
 
         public StartScreen()
         {
-            buttonPos = new Rectangle(Convert.ToInt32(Camera.Width / 2 - 70*10 / 2 * Camera.gameScale), 
-                Convert.ToInt32(Camera.Height / 2 + 175 * Camera.gameScale), 
-                Convert.ToInt32(70 * 10* Camera.gameScale), 
-                Convert.ToInt32(31 * 10 * Camera.gameScale));
+            buttonPos = new Rectangle(Convert.ToInt32(Camera.Width / 2 - 70*10 / 2 * Camera.gameScale/1.5), 
+                Convert.ToInt32(Camera.Height / 2 + 175 * Camera.gameScale/1.5), 
+                Convert.ToInt32(70 * 10* Camera.gameScale/1.5), 
+                Convert.ToInt32(31 * 10 * Camera.gameScale/1.5));
         }
 
         public void Update()
         {
             mouse = Mouse.GetState();
-            Begin = true;
+            //Begin = true;
             //Button Handling
             buttonState = 0;
             if (Utils.pointRectCollision(mouse.X, mouse.Y, buttonPos.X, buttonPos.Y, buttonPos.Width, buttonPos.Height))
@@ -165,7 +165,7 @@ namespace Fall.src
         public void LoadContent(ContentManager Content)
         {
             background = Content.Load<Texture2D>("Fall_Concept_Screen");
-            buttonSpriteSheet = Content.Load<Texture2D>("StartButton");
+            buttonSpriteSheet = Content.Load<Texture2D>("Button");
             button = Utils.spriteSheetLoader(70, 31, 3, 1);
         }
     }
