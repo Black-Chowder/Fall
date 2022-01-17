@@ -1,4 +1,3 @@
-D:\Programming\C#\Fall\obj\x86\Debug\Fall.csprojAssemblyReference.cache
 D:\Programming\C#\Fall\obj\x86\Debug\Fall.csproj.CoreCompileInputs.cache
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Fall.exe
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Fall.pdb
@@ -67,3 +66,8 @@ C:\Users\iabla\Documents\GitHub\Fall\obj\x86\Debug\Fall.pdb
 C:\Users\iabla\Documents\GitHub\Fall\bin\Windows\x86\Debug\Content\Score.xnb
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Score.xnb
 D:\Programming\C#\Fall\bin\Windows\x86\Debug\Content\Button.xnb
+D:\Programming\C#\Fall\obj\x86\Debug\Fall.csproj.AssemblyReference.cache
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Fall.exe.manifest
+D:\Programming\C#\Fall\bin\Windows\x86\Debug\Fall.application
+D:\Programming\C#\Fall\obj\x86\Debug\Fall.exe.manifest
+D:\Programming\C#\Fall\obj\x86\Debug\Fall.application
